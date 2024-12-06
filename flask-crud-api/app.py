@@ -1,8 +1,6 @@
-from app import createApp
-from app.routes import routes
+from app import create_app
 
-app = createApp()
-app.register_blueprint(routes)
+app = create_app()
 
 if __name__ == "__main__":
     app.run(debug=True)
